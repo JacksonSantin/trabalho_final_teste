@@ -351,7 +351,7 @@ campo senha como &ldquo;******&rdquo;.</p>
 ]]></details> 
 
 <testcase internalid="36" name="CT_001 - [RF01] Manter Livro - Caminho Feliz">
-	<node_order><![CDATA[1000]]></node_order>
+	<node_order><![CDATA[0]]></node_order>
 	<externalid><![CDATA[8]]></externalid>
 	<fullexternalid><![CDATA[1-8]]></fullexternalid>
 	<version><![CDATA[1]]></version>
@@ -389,7 +389,7 @@ apresentada.</p>
 </testcase>
 
 <testcase internalid="40" name="CT_002 - [RF01] Manter Livro - Mensagem de campo Tipo De Uso não preenchido">
-	<node_order><![CDATA[1001]]></node_order>
+	<node_order><![CDATA[1]]></node_order>
 	<externalid><![CDATA[9]]></externalid>
 	<fullexternalid><![CDATA[1-9]]></fullexternalid>
 	<version><![CDATA[1]]></version>
@@ -431,7 +431,7 @@ uso&rdquo;.</p>
 </testcase>
 
 <testcase internalid="44" name="CT_003 - [RF01] Manter Livro - Atualizar Cadastro">
-	<node_order><![CDATA[1002]]></node_order>
+	<node_order><![CDATA[2]]></node_order>
 	<externalid><![CDATA[10]]></externalid>
 	<fullexternalid><![CDATA[1-10]]></fullexternalid>
 	<version><![CDATA[1]]></version>
@@ -476,8 +476,47 @@ informa&ccedil;&otilde;es atualizadas.</p>
 </steps>
 </testcase>
 
+<testcase internalid="56" name="CT_005 - [RF01] Manter Livro - Cadastro Único">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<fullexternalid><![CDATA[1-13]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se aquele livro j&aacute; foi cadastrado anteriormente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; ter o livro j&aacute; cadastrado.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Adicionar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro de livro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de T&iacute;tulo, Tipo de Uso, Autor, Editora e Descri&ccedil;&atilde;o (titulo = T&iacute;tulo1, tipo de uso = Local, autor = Autor1, editora = Editora1, descri&ccedil;&atilde;o = Livro de Suspense) e selecione o bot&atilde;o &ldquo;Enviar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a&nbsp;mensagem &ldquo;O campo Titulo j&aacute; existe, ele deve ser &uacute;nico.&rdquo;.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
 <testcase internalid="52" name="CT_004 - [RF01] Manter Livro - Excluir Cadastro">
-	<node_order><![CDATA[1004]]></node_order>
+	<node_order><![CDATA[4]]></node_order>
 	<externalid><![CDATA[12]]></externalid>
 	<fullexternalid><![CDATA[1-12]]></fullexternalid>
 	<version><![CDATA[1]]></version>
@@ -520,45 +559,6 @@ aparecendo no banco de dados .</p>
 ]]></actions>
 	<expectedresults><![CDATA[<p>O livro foi exclu&iacute;do do banco de<br />
 dados com sucesso.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-</steps>
-</testcase>
-
-<testcase internalid="56" name="CT_005 - [RF01] Manter Livro - Cadastro Único">
-	<node_order><![CDATA[1005]]></node_order>
-	<externalid><![CDATA[13]]></externalid>
-	<fullexternalid><![CDATA[1-13]]></fullexternalid>
-	<version><![CDATA[1]]></version>
-	<summary><![CDATA[<p>Verificar se aquele livro j&aacute; foi cadastrado anteriormente.</p>
-]]></summary>
-	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; ter o livro j&aacute; cadastrado.</p>
-]]></preconditions>
-	<execution_type><![CDATA[1]]></execution_type>
-	<importance><![CDATA[2]]></importance>
-	<estimated_exec_duration></estimated_exec_duration>
-	<status>1</status>
-	<is_open>1</is_open>
-	<active>1</active>
-<steps>
-<step>
-	<step_number><![CDATA[1]]></step_number>
-	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Adicionar&rdquo;.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>A tela de cadastro de livro &eacute;<br />
-apresentada.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[2]]></step_number>
-	<actions><![CDATA[<p>Forne&ccedil;a os valores de T&iacute;tulo, Tipo de Uso, Autor, Editora e Descri&ccedil;&atilde;o (titulo = T&iacute;tulo1, tipo de uso = Local, autor = Autor1, editora = Editora1, descri&ccedil;&atilde;o = Livro de Suspense) e selecione o bot&atilde;o &ldquo;Enviar&rdquo;.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a&nbsp;mensagem &ldquo;O campo Titulo j&aacute; existe, ele deve ser &uacute;nico.&rdquo;.</p>
-
-<p>&nbsp;</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
