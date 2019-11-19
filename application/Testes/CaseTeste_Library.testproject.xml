@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="2" name="CT001-Autocadastro" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Caso de teste referente ao autocadastro.</p>
+]]></details> 
+
+<testcase internalid="3" name="CT_001 - [RF03] Realizar Autocadastro - Caminho Feliz">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<fullexternalid><![CDATA[1-1]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se a funcionalidade de cadastrar usu&aacute;rio est&aacute; executando<br />
+corretamente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio n&atilde;o dever&aacute; estar cadastrado no sistema</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Cadastre-se&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de e-mail e senha<br />
+(e-mail = jackson@gmail.com, senha = 123456 ) e<br />
+selecione o bot&atilde;o &ldquo;Cadastrar&rdquo;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;Cadastro com<br />
+sucesso! Clique ​ <strong>aqui</strong>​ para<br />
+acessar o sistema.&rdquo; dever&aacute; ser<br />
+exibida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clica na palavra &ldquo;<strong>aqui</strong>&rdquo; da mensagem que<br />
+est&aacute; sendo exibida.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de login dever&aacute; ser<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9" name="CT_002 - [RF03] Realizar Autocadastro - Mensagem de campo Senha não preenchido">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<fullexternalid><![CDATA[1-2]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Mostrar mensagem alertando que o campo n&atilde;o foi preenchido.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio n&atilde;o dever&aacute; estar cadastrado no sistema</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Cadastre-se&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de e-mail (e-mail =<br />
+jackson@gmail.com) e selecione o bot&atilde;o<br />
+&ldquo;Cadastrar&rdquo;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;O campo Email j&aacute; existe, ele deve ser &uacute;nico. O campo Senha &eacute; obrigat&oacute;rio.&rdquo; dever&aacute; ser exibida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="13" name="CT_003 - [RF03] Realizar Autocadastro - Mensagem de campo E-mail não preenchido">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<fullexternalid><![CDATA[1-3]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Mostrar mensagem alertando que o campo n&atilde;o foi preenchido.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio n&atilde;o dever&aacute; estar cadastrado no sistema</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Cadastre-se&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de senha (senha =<br />
+123456) e selecione o bot&atilde;o<br />
+&ldquo;Cadastrar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;O campo Email &eacute; obrigat&oacute;rio.&rdquo; dever&aacute; ser exibida.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div id="gtx-trans" style="position: absolute; left: 284px; top: 34px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="17" name="CT_004 - [RF03] Realizar Autocadastro - validação e-mail">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<fullexternalid><![CDATA[1-4]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Valida se o campo de e-mail do cadastro realmente est&aacute; constando um e-mail.</p>
+
+<div>
+<div>&nbsp;</div>
+</div>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio n&atilde;o dever&aacute; estar cadastrado no sistema</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Cadestre-se&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de e-mail e senha<br />
+(e-mail = jackson, senha = 123456) e selecione o bot&atilde;o &ldquo;Cadastrar&rdquo;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;Inclua um &quot;@&quot; no endere&ccedil;o de e-mail. &quot;jackson&quot; est&aacute; com um &quot;@&quot; faltando.&rdquo; dever&aacute; ser exibida.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="21" name="CT002-Login" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Caso de teste da funcionalidade de realizar login.</p>
+]]></details> 
+
+<testcase internalid="22" name="CT_001 - [RF02] Realizar Login - Caminho Feliz">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<fullexternalid><![CDATA[1-5]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se a funcionalidade de login est&aacute; executando corretamente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; estar cadastrado no sistema e dever&aacute; estar na tela de<br />
+login.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a o dado de e-mail (e-mail =<br />
+jackson@gmail.com).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O e-mail &ldquo;jackson@gmail.com&rdquo; &eacute;<br />
+apresentado no campo E-mail.</p>
+
+<div id="gtx-trans" style="position: absolute; left: 171px; top: 52px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a o dado de senha (senha = 123456).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A senha &ldquo;123456&rdquo; &eacute; exibida no<br />
+campo senha como &ldquo;******&rdquo;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clica no bot&atilde;o &ldquo;Entrar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema redirecionar para a<br />
+tela inicial.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="27" name="CT_002 - [RF02] Realizar Login - Mensagem de Senha campo não preenchido">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<fullexternalid><![CDATA[1-6]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Mostrar mensagem alertando que o campo n&atilde;o foi preenchido.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; estar na tela de login.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a o dado de e-mail (e-mail =<br />
+jackson@gmail.com).</p>
+
+<div id="gtx-trans" style="position: absolute; left: 149px; top: -12px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>O e-mail &ldquo;jackson@gmail.com&rdquo; &eacute;<br />
+apresentado no campo E-mail.</p>
+
+<div id="gtx-trans" style="position: absolute; left: 169px; top: 52px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Seleciona o bot&atilde;o &ldquo;Entrar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;E-mail ou senha Incorretos&rdquo; dever&aacute; ser exibida.</p>
+
+<div id="gtx-trans" style="position: absolute; left: 103px; top: 52px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="31" name="CT_003 - [RF02] Realizar Login - Mensagem de campo E-mail não preenchido">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<fullexternalid><![CDATA[1-7]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Mostrar mensagem alertando que o campo n&atilde;o foi preenchido.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; estar na tela de login.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a o dado de senha (senha = 123456).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O usu&aacute;rio &ldquo;123456&rdquo; &eacute; exibida no<br />
+campo senha como &ldquo;******&rdquo;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Seleciona o bot&atilde;o &ldquo;Entrar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A mensagem &ldquo;E-mail ou senha Incorretos&rdquo; dever&aacute; ser exibida.</p>
+
+<div id="gtx-trans" style="position: absolute; left: 113px; top: 52px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="35" name="CT003-Manter Livro" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Caso de teste da funcionalidade de Manter Livro.</p>
+]]></details> 
+
+<testcase internalid="36" name="CT_001 - [RF01] Manter Livro - Caminho Feliz">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<fullexternalid><![CDATA[1-8]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se a funcionalidade de adicionar livros est&aacute; executando<br />
+corretamente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; estar ​ logado ​ no sistema.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Adicionar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro de livro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forna&ccedil;a os valores de T&iacute;tulo, Tipo de Uso, Autor, Editora e Descri&ccedil;&atilde;o (t&iacute;tulo = T&iacute;tulo1, tipo de uso = Local, autor = Autor1, editora = Editora1, descri&ccedil;&atilde;o = Livro de Suspense) e selecione o bot&atilde;o &quot;Enviar&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a lista de livros cadastrados com esse livro incluso na lista tamb&eacute;m.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40" name="CT_002 - [RF01] Manter Livro - Mensagem de campo Tipo De Uso não preenchido">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<fullexternalid><![CDATA[1-9]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Mostrar mensagem alertando que o campo n&atilde;o foi preenchido.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; estar ​ logado ​ no sistema.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Adicionar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro de livro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de T&iacute;tulo, Autor,<br />
+Editora e Descri&ccedil;&atilde;o (titulo = T&iacute;tulo1, autor = Autor1, editora = Editora1, descri&ccedil;&atilde;o =&nbsp;Livro de Suspense) e selecione o bot&atilde;o<br />
+&ldquo;Enviar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a<br />
+mensagem &ldquo;Preencha este<br />
+campo.&rdquo; no campo &ldquo;Tipo de<br />
+uso&rdquo;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44" name="CT_003 - [RF01] Manter Livro - Atualizar Cadastro">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<fullexternalid><![CDATA[1-10]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se a funcionalidade de atualizar o cadastro de livros est&aacute;<br />
+executando corretamente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; ter o livro j&aacute; cadastrado.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione o &iacute;cone &ldquo;Editar&rdquo; do cadastro<br />
+desejado.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro de livro com<br />
+todos os dados j&aacute; cadastrados &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Altere os valores de T&iacute;tulo, Tipo de Uso, Autor, Editora e Descri&ccedil;&atilde;o (titulo = T&iacute;tulo2,&nbsp;tipo de uso = Livre, autor = Autor2, editora = Editora2, descri&ccedil;&atilde;o = Livro de Terror) e selecione o bot&atilde;o &ldquo;Enviar&rdquo;.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a lista de<br />
+livros com esse livro contendo as<br />
+informa&ccedil;&otilde;es atualizadas.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="52" name="CT_004 - [RF01] Manter Livro - Excluir Cadastro">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<fullexternalid><![CDATA[1-12]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se a funcionalidade de excluir livros est&aacute; executando corretamente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; ter o livro j&aacute; cadastrado.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione o &iacute;cone &ldquo;Excluir&rdquo; do cadastro<br />
+desejado.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Um modal de confirma&ccedil;&atilde;o dever&aacute; ser exibido na tela com a mensagem: &quot;Aten&ccedil;&atilde;o! Voc&ecirc; tem certeza que deseja excluir o item&nbsp;1 ?&quot;</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Clique em &quot;Sim, remover&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O livro dever&aacute; ser removido e a lista atualizada sem nenhuma informa&ccedil;&atilde;o.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Verifique se o livro n&atilde;o est&aacute; mais<br />
+aparecendo no banco de dados .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O livro foi exclu&iacute;do do banco de<br />
+dados com sucesso.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="56" name="CT_005 - [RF01] Manter Livro - Cadastro Único">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<fullexternalid><![CDATA[1-13]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Verificar se aquele livro j&aacute; foi cadastrado anteriormente.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. O usu&aacute;rio dever&aacute; ter o livro j&aacute; cadastrado.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Selecione a op&ccedil;&atilde;o &ldquo;Adicionar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A tela de cadastro de livro &eacute;<br />
+apresentada.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Forne&ccedil;a os valores de T&iacute;tulo, Tipo de Uso, Autor, Editora e Descri&ccedil;&atilde;o (titulo = T&iacute;tulo1, tipo de uso = Local, autor = Autor1, editora = Editora1, descri&ccedil;&atilde;o = Livro de Suspense) e selecione o bot&atilde;o &ldquo;Enviar&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>O sistema dever&aacute; exibir a&nbsp;mensagem &ldquo;O campo Titulo j&aacute; existe, ele deve ser &uacute;nico.&rdquo;.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

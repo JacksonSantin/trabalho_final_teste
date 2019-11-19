@@ -1,0 +1,1051 @@
+{
+  "id": "58745671-ee22-4839-b012-05b55b781341",
+  "version": "2.0",
+  "name": "Trabalho Final de Teste de Software",
+  "url": "http://[::1]/Trabalho_teste/TFT/index.php/livro/cadastrar",
+  "tests": [{
+    "id": "5ae4dfc8-a0cc-4283-8ff2-37ed7df633c5",
+    "name": "4 - Cadastrar",
+    "commands": [{
+      "id": "0c0e9591-8ef5-4445-92d0-045971a3840d",
+      "comment": "",
+      "command": "open",
+      "target": "/Trabalho_teste/TFT/index.php/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58693782-4b2d-4ba2-9d6d-b37d80a19356",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "234e54f5-a43e-47b4-bd8b-24911517be02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-box-msg",
+      "targets": [
+        ["css=.login-box-msg", "css:finder"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Registre-se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d892fafd-9625-4e3e-9f90-7457ef8cbb98",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d9c77b2-e3f9-4c97-b040-70ed132ce47e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jackson@gmail.com"
+    }, {
+      "id": "608ac74e-4df5-4c24-b34e-42e44d7b3c55",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "186a292a-c49f-4f79-9b23-97072e8a5193",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f854577-eb3e-4968-9854-aad202880356",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert b",
+      "targets": [
+        ["css=.alert b", "css:finder"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/div/a/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'aqui')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c2116f78-eae0-40ce-ab8a-1a8bb47a7629",
+    "name": "2 - Aviso campo senha não informado",
+    "commands": [{
+      "id": "fa9d0a16-de61-4214-afde-bc8a33b66593",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf1d13f-b8ff-4f91-895b-e9c676e4c51b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0afbfffb-3807-415e-b540-d9a9918e4fd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2efb9c2b-86f3-4e5b-b89a-be6d69c89a52",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jackson@gmail.com"
+    }, {
+      "id": "6dbaa979-7549-4726-8f24-826077467bcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "393db8e7-1ff8-4b92-a1c2-9cc8855cb4ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "00d73a1e-fd53-4532-be08-d614be4bb15a",
+    "name": "1 - Aviso campo e-mail não informado",
+    "commands": [{
+      "id": "0a52ee05-b8df-4123-b640-c10a0da2b4fc",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4234e590-8193-4888-ad73-5d40e32e006d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44225c58-fd40-4b89-8125-2e7f70b3906a",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f78087-320f-44ab-8109-97ca1295011e",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "d8e01a39-8088-4801-8c5c-e8315a7c6d9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7521ee2d-dbff-4cc2-b4da-3ac3445c0f15",
+    "name": "3 - Validação E-mail",
+    "commands": [{
+      "id": "12dd3cc3-c3c9-400f-8c90-b8db32333dfd",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4c1204b-f302-43c5-9c91-472cecbded72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "237c32c0-3334-4d6e-a458-984fbfff5758",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3055fdaa-5c38-4495-953f-eb42c69bda8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jackson"
+    }, {
+      "id": "443ef78e-2f62-4939-97a7-a9a5adaf50a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "09e19bb6-7370-4d94-a60a-29e6d16125a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9c3a709f-ae1a-4624-819c-7bb0ca47c3e0",
+    "name": "6 - Logar",
+    "commands": [{
+      "id": "c5642575-e4ef-4268-b528-a3c00be73edc",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d6175c3-4297-4ff1-8574-605092749afd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f9335ee-b615-4e07-adfb-f81eb8c6bf9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2604afd4-c17b-4ab0-bd24-fe2930e602ae",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jackson@gmail.com"
+    }, {
+      "id": "1f88bd98-124a-4620-99ae-ca1c53ee2955",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "1f28c715-ec3d-49fd-8c21-9a834f7709b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3e3173e7-19eb-4de0-921b-d490288fa8b8",
+    "name": "6 - Aviso de campo de senha não preenchido no logina",
+    "commands": [{
+      "id": "7290adb7-59a3-49de-942d-7e12dde161ef",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16ec87e2-d780-4344-b13d-3b9db7b849bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a17d2a6-b254-44d0-af5c-28c1d90329f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf4e523-160e-427a-8f32-26cdf74c1cbd",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jackson@gmail.com"
+    }, {
+      "id": "9c59821f-71fb-49d2-aee5-8dc661506ecf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fb7cdaff-095c-4c1d-833a-ba2a73cae840",
+    "name": "5 - Aviso de campo de e-mail não preenchido no login",
+    "commands": [{
+      "id": "b319cf93-02ed-4273-8438-9a0f0bbda59b",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a04cbf31-02ef-406a-b4b7-4f300c7ae410",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cda2f97-f5fb-4123-ae75-e0d7416c74d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d8a8bf-b5bd-4ef4-8604-b38626ab7358",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "d5cd2bc9-c1e9-45b0-82e6-941a97762ece",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div[2]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "76c401ec-1ef6-46c9-b8d7-50e9c4b542bb",
+    "name": "8 - Cadastrar Livro",
+    "commands": [{
+      "id": "7ac4fbb1-c7a2-4f5f-a057-7ec959f6548c",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/livro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef326e2a-6bbc-4528-a97b-d55ceb1b7502",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68654c5d-7d4f-4cae-9bf6-e7050ad11cda",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar",
+      "targets": [
+        ["linkText=Adicionar", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://[::1]/Trabalho_teste/TFT/index.php/livro/cadastrar']", "xpath:href"],
+        ["xpath=//section[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9188484a-62aa-4c91-b2ae-6124762f856f",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d737f62b-a1bd-404b-9ae1-2f9406928fab",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "título1"
+    }, {
+      "id": "8e8091fe-ef19-4b53-8cb2-255146ffe65e",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo_uso",
+      "targets": [
+        ["id=tipo_uso", "id"],
+        ["name=tipo_uso", "name"],
+        ["css=#tipo_uso", "css:finder"],
+        ["xpath=//input[@id='tipo_uso']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "local"
+    }, {
+      "id": "0cc90cfd-2730-4234-acdf-908febc0fdc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "autor1"
+    }, {
+      "id": "6ef7fabc-f52c-43e0-801e-c641de2623e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=editora",
+      "targets": [
+        ["id=editora", "id"],
+        ["name=editora", "name"],
+        ["css=#editora", "css:finder"],
+        ["xpath=//input[@id='editora']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "editora1"
+    }, {
+      "id": "c5ad64b9-d2f2-4767-8444-f677fa0d755b",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//input[@id='descricao']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Livro de suspense"
+    }, {
+      "id": "21e80a20-5551-48c4-8e38-3f843b64233c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c28400-e79b-48d5-a394-27d9b5af8136",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71671e51-4040-47e3-83b1-5edf587d1876",
+    "name": "7 - Aviso de campo não preenchido no livro",
+    "commands": [{
+      "id": "d5e85f8b-e021-4321-9f8b-b2690fdbf713",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/livro/cadastrar",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94203091-40c0-41d8-87e8-0384638746b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8767a08c-bf57-4a8b-997f-b4e7013a612e",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ac30f6-08c1-4d75-9683-3119b38d75f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Título1"
+    }, {
+      "id": "3c61d504-a43b-4889-aca4-e282f9be1d06",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "autor1"
+    }, {
+      "id": "d8235432-0915-42a0-9e61-c18a11bb77c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=editora",
+      "targets": [
+        ["id=editora", "id"],
+        ["name=editora", "name"],
+        ["css=#editora", "css:finder"],
+        ["xpath=//input[@id='editora']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "editora1"
+    }, {
+      "id": "dc917b7a-e669-48e3-89e6-af5157c0fe5b",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//input[@id='descricao']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Livro de suspense"
+    }, {
+      "id": "d93341a1-fc4b-4102-8b24-bcd188d1b916",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1950260b-cbca-49a6-ad51-534710b58367",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "título1"
+    }, {
+      "id": "75ed528a-296a-4f47-8dba-4bba99af0aee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "426ba8cc-f0db-415d-8ffe-1f29397bd1ab",
+    "name": "10 - Atualizar cadastro livro",
+    "commands": [{
+      "id": "391e6f1c-e8e6-426a-b3c7-1d9deacd9db1",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/livro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bd46d8-e7d7-4754-828b-1b448d4803dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57d8fe11-c9c7-4e15-aa56-bea022d34386",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-edit",
+      "targets": [
+        ["css=.fa-edit", "css:finder"],
+        ["xpath=//table[@id='tabelaDataTable']/tbody/tr/td[7]/a/i", "xpath:idRelative"],
+        ["xpath=//td[7]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "340689bc-be40-427c-99a6-5089d055d9ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd613151-e89d-45f8-8d6a-c464f1de2b80",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "título2"
+    }, {
+      "id": "c3b8e704-8580-4fb5-be6f-484889c34ffe",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo_uso",
+      "targets": [
+        ["id=tipo_uso", "id"],
+        ["name=tipo_uso", "name"],
+        ["css=#tipo_uso", "css:finder"],
+        ["xpath=//input[@id='tipo_uso']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "livre"
+    }, {
+      "id": "822b5f62-aa57-4dda-a154-18d97f9977f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "autor2"
+    }, {
+      "id": "2aecc3ac-6d34-4bc7-af2f-148c7e84fda2",
+      "comment": "",
+      "command": "type",
+      "target": "id=editora",
+      "targets": [
+        ["id=editora", "id"],
+        ["name=editora", "name"],
+        ["css=#editora", "css:finder"],
+        ["xpath=//input[@id='editora']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "editora2"
+    }, {
+      "id": "65de60f0-6fa4-43ae-b7ea-8c48573466d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//input[@id='descricao']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Livro de terror"
+    }, {
+      "id": "5b5a28a1-12c3-49c0-ac9e-0f64806c14e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "216e01f9-5403-4670-8640-afb72b0fd656",
+    "name": "11 - Excluir livro",
+    "commands": [{
+      "id": "b54431a3-aa0b-42cb-842d-c86b4852cbef",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/livro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b018fb1-1b46-4454-9fc9-aaca881d02b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "930a6a3a-83fc-452a-8180-39f09df9e796",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirmaExclusao",
+      "targets": [
+        ["css=.confirmaExclusao", "css:finder"],
+        ["xpath=//table[@id='tabelaDataTable']/tbody/tr/td[7]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0da1a61e-1de5-41c5-b35f-dd25ddfa379e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-danger",
+      "targets": [
+        ["css=.modal-footer > .btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='modalConfirmacao']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim, remover')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a5843806-6808-4e96-8caf-f40322a97108",
+    "name": "9 - Verifica se cadastro de livro já existe",
+    "commands": [{
+      "id": "cb6732f7-b169-4696-bed3-d8e92397ac59",
+      "comment": "",
+      "command": "open",
+      "target": "http://[::1]/Trabalho_teste/TFT/index.php/livro/cadastrar",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "402fc8fd-38c4-47fc-b98b-33af9b212bf9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1360x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e934451f-4823-4e0c-964d-3bdbdd52a747",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67d38037-37f6-480e-9da1-3d0286bcdf69",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "título1"
+    }, {
+      "id": "1abcbb5c-7272-4775-90e9-bae8edf7ebac",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo_uso",
+      "targets": [
+        ["id=tipo_uso", "id"],
+        ["name=tipo_uso", "name"],
+        ["css=#tipo_uso", "css:finder"],
+        ["xpath=//input[@id='tipo_uso']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "local"
+    }, {
+      "id": "fc668d73-7a0c-4278-a28f-07b7dfc2acc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "autor1"
+    }, {
+      "id": "455f6b93-5f6e-420f-a762-bf957641166c",
+      "comment": "",
+      "command": "type",
+      "target": "id=editora",
+      "targets": [
+        ["id=editora", "id"],
+        ["name=editora", "name"],
+        ["css=#editora", "css:finder"],
+        ["xpath=//input[@id='editora']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "editora1"
+    }, {
+      "id": "81efe733-f303-483c-9cb2-e7b64f502db7",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//input[@id='descricao']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Livro de suspense"
+    }, {
+      "id": "eb755711-54f2-4f62-b998-87b3f8fa6f5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//body[@id='dummybodyid']/div/div/section[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b8769ca9-b0c7-4472-86ee-c760837c3af1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5ae4dfc8-a0cc-4283-8ff2-37ed7df633c5"]
+  }],
+  "urls": ["http://[::1]/", "http://[::1]/Trabalho_teste/TFT/index.php/livro/cadastrar"],
+  "plugins": []
+}
